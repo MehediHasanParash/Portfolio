@@ -1,34 +1,43 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
-import Particles from "react-particles-js";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home/Home';
+import ProjectDetail from './components/ProjectDetail/ProjectDetail';
+import Navbar from './components/Navbar/Navbar';
+import Contact from './components/Contact/Contact';
+// import Resume from './components/Resume/Resume';
 
 function App() {
   return (
     <div>
-      {/* <Particles
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900
-              }
-            },
-            shape: {
-              type: "star",
-              stroke: {
-                width: 6,
-                color: "#f9ab00"
-              }
-            }
-          }
-        }}
-      /> */}
-    <Navbar></Navbar>
-    <Header></Header>
+
+      <Router>
+
+        <Navbar></Navbar>
+
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/project">
+            <ProjectDetail></ProjectDetail>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          {/* <Route path="/resume">
+            <Resume></Resume>
+          </Route> */}
+        </Switch>
+      </Router>
     </div>
   );
 }
