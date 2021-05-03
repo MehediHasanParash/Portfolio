@@ -7,16 +7,39 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
-import ProjectDetail from './components/ProjectDetail/ProjectDetail';
+import Project from './components/Project/Project';
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
-// import Resume from './components/Resume/Resume';
+import Blog from './components/Blog/Blog';
+import Resume from './components/Resume/Resume';
+// import Particles from "react-particles-js";
+
 
 function App() {
   return (
     <div>
 
       <Router>
+      {/* <Particles
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 500
+              }
+            },
+            shape: {
+              type: "star",
+              stroke: {
+                width: 6,
+                color: "#f9ab00"
+              }
+            }
+          }
+        }}
+      /> */}
 
         <Navbar></Navbar>
 
@@ -28,14 +51,17 @@ function App() {
             <Home></Home>
           </Route>
           <Route path="/project">
-            <ProjectDetail></ProjectDetail>
+            <Project></Project>
           </Route>
           <Route path="/contact">
             <Contact></Contact>
           </Route>
-          {/* <Route path="/resume">
+          <Route path="/blog">
+            <Blog></Blog>
+          </Route>
+          <Route path="/resume">
             <Resume></Resume>
-          </Route> */}
+          </Route>
         </Switch>
       </Router>
     </div>

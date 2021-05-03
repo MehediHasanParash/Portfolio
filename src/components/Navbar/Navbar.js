@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand text-danger" href="#"> <img style={{height: '35px'}} src={practice2} alt=""/> </a>
+        <a className="navbar-brand text-danger" href="#"> <img style={{height: '35px'}} src={practice2} alt=""/> MHP</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <FontAwesomeIcon icon={faBars} style={{ color: 'red' }} />
         </button>
@@ -28,8 +28,8 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faIdBadge} style={{ color: 'yellow' }} /> Resume</Link>
             </li>
             <li className="nav-item">
-              <Link to="/blogs" className="nav-link ml-5 text-white">
-                <FontAwesomeIcon icon={faBlog} style={{ color: 'yellow' }} /> Blogs</Link>
+              <Link to="/blog" className="nav-link ml-5 text-white">
+                <FontAwesomeIcon icon={faBlog} style={{ color: 'yellow' }} /> Blog</Link>
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link ml-5 text-white">

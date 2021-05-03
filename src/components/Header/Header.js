@@ -16,22 +16,25 @@ const Header = () => {
                 <div class="row">
                     <div class="col">
                     <div class="col-sm-12 p-5 ">
-                    <h1 className="text-info">Hello, It's <br /> MEHEDI HASAN PARASH</h1>
-                            <h3 className="text-light">JUNIOR WEB DEVELOPER</h3>
+                    <h1 className="text-warning bg-dark">Hello, It's <br /> MEHEDI HASAN PARASH</h1>
+                            <h3 className="text-light bg-info">JUNIOR WEB DEVELOPER</h3>
                             <Typed
-                                className="typed-text"
+                                className="typed-text bg-dark"
                                 strings={["PORTFOLIO", "MEHEDI HASAN", "REACT DEVELOPER"]}
                                 typeSpeed={40}
                                 backSpeed={60}
                                 loop
                             />
+                            <p className="text-white bg-info">
+                            I've been developing website since 2021. I build websites and applications with the latest technologies that work as hard as you, achieve results that you want, and generate a return on your investment. Let me help you grow your business by developing beautifull websites.
+                            </p>
                             <br/>
                             <br/>
                             <a href="https://drive.google.com/uc?export=download&id=1_79QYcxzFJwx5mXz3te0RTZsFAxd_j5X" className="btn-main-offer"><FontAwesomeIcon icon={faDownload} style={{ color: 'orange' }} /> DOWNLOAD CV</a></div>
                     </div>
                     <div class="col">
                         <div class="p-2 ">
-                            <img style={{ height: '200px' }} src={practice2} />
+                            <img style={{ height: '400px' }} src={practice2} />
                         </div>
                     </div>
                 </div>
