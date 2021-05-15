@@ -12,7 +12,9 @@ import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
 import Blog from './components/Blog/Blog';
 import Resume from './components/Resume/Resume';
-// import Particles from "react-particles-js";
+import ProjectHolder from './components/ProjectHolder/ProjectHolder';
+import ContactHolder from './components/ContactHolder/ContactHolder';
+import Services from './components/Services/Services';
 
 
 function App() {
@@ -51,16 +53,16 @@ function App() {
             <Home></Home>
           </Route>
           <Route path="/project">
-            <Project></Project>
+            <ProjectHolder></ProjectHolder>
           </Route>
           <Route path="/contact">
-            <Contact></Contact>
+            <ContactHolder></ContactHolder>
           </Route>
           <Route path="/blog">
             <Blog></Blog>
           </Route>
-          <Route path="/resume">
-            <Resume></Resume>
+          <Route path="/services">
+            <Services></Services>
           </Route>
         </Switch>
       </Router>
