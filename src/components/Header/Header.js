@@ -5,6 +5,7 @@ import { FaFacebookF, FaTwitter, FaLinkedin, FaPinterest, FaInstagram } from "re
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import dummy from '../../images/dummy.jpg';
 import Particles from "react-particles-js";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -54,7 +55,7 @@ const Header = () => {
                     <a href="https://drive.google.com/uc?export=download&id=1_79QYcxzFJwx5mXz3te0RTZsFAxd_j5X" className="button button-outline">
                     <FontAwesomeIcon icon={faDownload} style={{ color: 'orange' }} /> Download CV</a>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="" id="about" className="button button-smart">About Me</a>
+                    <Link to="/about" className="button button-smart">About Me</Link>
                   </div>
                 </div>
               </div>
