@@ -15,6 +15,8 @@ import Resume from './components/Resume/Resume';
 import ProjectHolder from './components/ProjectHolder/ProjectHolder';
 import ContactHolder from './components/ContactHolder/ContactHolder';
 import Services from './components/Services/Services';
+import BlogHolder from './components/BlogHolder/BlogHolder';
+import AboutHolder from './components/AboutHolder/AboutHolder';
 
 
 function App() {
@@ -58,8 +60,11 @@ function App() {
           <Route path="/contact">
             <ContactHolder></ContactHolder>
           </Route>
+          <Route path="/about">
+            <AboutHolder></AboutHolder>
+          </Route>
           <Route path="/blog">
-            <Blog></Blog>
+            <BlogHolder></BlogHolder>
           </Route>
           <Route path="/services">
             <Services></Services>

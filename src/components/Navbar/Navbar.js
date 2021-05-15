@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHome, faIdBadge, faBlog, faPhone, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHome, faIdBadge, faBlog, faPhone, faFile, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import logo from '../../images/logo.jpg';
 
@@ -30,6 +30,10 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/blog" className="nav-link ml-5 text-white">
                 <FontAwesomeIcon icon={faBlog} style={{ color: 'red' }} /> Blog</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link ml-5 text-white">
+                <FontAwesomeIcon icon={ faAddressCard} style={{ color: 'red' }} /> About Me</Link>
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link ml-5 text-white">

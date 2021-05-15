@@ -28,6 +28,8 @@ const Project = () => {
                 <div className="">
                 <a href="https://city-travel-c339d.web.app/">  <img className="" src={city} alt="" />
                 </a>
+                <p>Project Details will be uploaded soon</p>
+
                 </div>
                <div className="">
                <a href="https://ema-john-online-shopping-complex.netlify.app/">  <img className="" src={emaJohn} alt="" />
